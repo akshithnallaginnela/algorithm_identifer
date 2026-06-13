@@ -2,41 +2,170 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A luxury couture storefront inspired by editorial Indian fashion, bridalwear, jewellery, and private appointments."
+    />
+    <title>Maison Aariva | Couture, Bridal & Fine Jewellery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Analog Clock</title>
   </head>
-
   <body>
-    <div class="container">
-      <div class="clock">
-        <div style="--clr: #ff3d58; --h: 74px" id="hour" class="hand">
-          <i></i>
-        </div>
-        <div style="--clr: #00a6ff; --h: 84px" id="min" class="hand">
-          <i></i>
-        </div>
-        <div style="--clr: #ffffff; --h: 94px" id="sec" class="hand">
-          <i></i>
-        </div>
+    <div class="announcement">Private couture previews now open — book an atelier appointment</div>
 
-        <span style="--i: 1"><b>1</b></span>
-        <span style="--i: 2"><b>2</b></span>
-        <span style="--i: 3"><b>3</b></span>
-        <span style="--i: 4"><b>4</b></span>
-        <span style="--i: 5"><b>5</b></span>
-        <span style="--i: 6"><b>6</b></span>
-        <span style="--i: 7"><b>7</b></span>
-        <span style="--i: 8"><b>8</b></span>
-        <span style="--i: 9"><b>9</b></span>
-        <span style="--i: 10"><b>10</b></span>
-        <span style="--i: 11"><b>11</b></span>
-        <span style="--i: 12"><b>12</b></span>
+    <header class="site-header" id="top">
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <a class="logo" href="#top" aria-label="Maison Aariva home">MAISON AARIVA</a>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#new">New Arrivals</a>
+        <a href="#women">Women</a>
+        <a href="#men">Men</a>
+        <a href="#collections">Collections</a>
+        <a href="#jewellery">Jewellery</a>
+        <a href="#atelier">Atelier</a>
+      </nav>
+      <div class="header-actions" aria-label="Account actions">
+        <a href="#search">Search</a>
+        <a href="#wishlist">Wishlist</a>
+        <a href="#cart">Cart</a>
       </div>
-    </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Featured couture campaign">
+        <div class="hero-media"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Annual Couture Sale</p>
+          <h1>Heirloom occasionwear, tailored for the modern celebration.</h1>
+          <p>
+            Discover luminous saris, sculpted sherwanis, embroidered lehengas, and fine jewellery
+            crafted for weddings, soirées, and destination festivities.
+          </p>
+          <div class="button-row">
+            <a class="btn btn-light" href="#new">Explore new season</a>
+            <a class="btn btn-outline-light" href="#appointment">Enquire now</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="split-feature" id="new">
+        <article class="feature-card reveal">
+          <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1200&q=80" alt="Embroidered bridal lehenga displayed in warm light" />
+          <div>
+            <p class="eyebrow">New</p>
+            <h2>The Gilded Edit</h2>
+            <a href="#women">Shop Women</a>
+            <a href="#men">Shop Men</a>
+          </div>
+        </article>
+        <article class="feature-card reveal">
+          <img src="https://images.unsplash.com/photo-1603252109360-909baaf261c7?auto=format&fit=crop&w=1200&q=80" alt="Luxury belt and accessories styled on silk fabric" />
+          <div>
+            <p class="eyebrow">Accessories</p>
+            <h2>Signature finishing pieces</h2>
+            <a href="#jewellery">Explore Jewellery</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="collections" id="collections">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Curated this season</p>
+          <h2>Classic silhouettes with a cinematic sense of shine.</h2>
+        </div>
+        <div class="collection-grid">
+          <a class="collection-tile reveal" id="women" href="#appointment">
+            <img src="https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?auto=format&fit=crop&w=900&q=80" alt="Model wearing a couture lehenga" />
+            <span>Lehengas</span>
+          </a>
+          <a class="collection-tile reveal" href="#appointment">
+            <img src="https://images.unsplash.com/photo-1610189020358-20656f01e154?auto=format&fit=crop&w=900&q=80" alt="Elegant sari detail with jewellery" />
+            <span>Sarees</span>
+          </a>
+          <a class="collection-tile reveal" id="men" href="#appointment">
+            <img src="https://images.unsplash.com/photo-1593032465175-481ac7f401a0?auto=format&fit=crop&w=900&q=80" alt="Menswear jacket styled for a formal occasion" />
+            <span>Sherwanis</span>
+          </a>
+          <a class="collection-tile reveal" href="#appointment">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80" alt="Editorial fusion wear in dramatic lighting" />
+            <span>Fusion Wear</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="jewellery" id="jewellery">
+        <div class="jewellery-copy reveal">
+          <p class="eyebrow">High Jewellery</p>
+          <h2>Luminous adornments for ceremonial evenings.</h2>
+          <p>
+            Pair sculptural chokers, kundan-inspired earrings, and pearl accents with couture looks
+            designed to move from mandap to midnight reception.
+          </p>
+          <a class="btn btn-dark" href="#appointment">Explore the edit</a>
+        </div>
+        <div class="jewellery-image reveal"></div>
+      </section>
+
+      <section class="vows" id="atelier">
+        <div class="vows-card reveal">
+          <p class="eyebrow">Maison Vows</p>
+          <h2>Understated yet unmistakable tailoring for intimate ceremonies.</h2>
+          <a href="#appointment">Explore bridal services</a>
+        </div>
+      </section>
+
+      <section class="stars">
+        <div class="section-heading reveal">
+          <p class="eyebrow">In Maison Aariva</p>
+          <h2>Where dreams are draped in couture and every guest becomes the muse.</h2>
+        </div>
+        <div class="star-grid">
+          <figure class="reveal"><img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=700&q=80" alt="Guest in couture gown" /><figcaption>Aaravani Silk</figcaption></figure>
+          <figure class="reveal"><img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=700&q=80" alt="Guest wearing evening couture" /><figcaption>Noor Jacket</figcaption></figure>
+          <figure class="reveal"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=700&q=80" alt="Editorial portrait with embellished garment" /><figcaption>Zari Muse</figcaption></figure>
+          <figure class="reveal"><img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=700&q=80" alt="Formal fashion portrait" /><figcaption>Velvet Noir</figcaption></figure>
+        </div>
+      </section>
+
+      <section class="process" id="appointment">
+        <div class="section-heading reveal">
+          <p class="eyebrow">The couture process</p>
+          <h2>From first consultation to final fitting.</h2>
+        </div>
+        <div class="process-grid">
+          <article class="reveal"><span>01</span><h3>Initial Consultation</h3><p>Meet a client relations specialist online or in the atelier to define the occasion, mood, and timeline.</p></article>
+          <article class="reveal"><span>02</span><h3>Measurements</h3><p>Our team captures precise measurements and fit preferences for a made-to-order silhouette.</p></article>
+          <article class="reveal"><span>03</span><h3>Design Process</h3><p>Choose embroidery, colour, textile, and styling details with guided recommendations.</p></article>
+          <article class="reveal"><span>04</span><h3>Delivery</h3><p>Final quality checks, fittings, and careful packaging prepare your look for the celebration.</p></article>
+        </div>
+        <a class="btn btn-dark" href="mailto:appointments@example.com">Book an appointment</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h2>MAISON AARIVA</h2>
+        <p>Sign up for private launch updates, trunk-show invites, and atelier news.</p>
+        <form class="newsletter">
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" type="email" placeholder="Your email" />
+          <button type="submit">Sign up</button>
+        </form>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="#collections">Collections</a>
+        <a href="#atelier">Couture Process</a>
+        <a href="#appointment">Visit Store</a>
+        <a href="#top">Back to Top</a>
+      </nav>
+    </footer>
 
     <script src="script.js"></script>
   </body>
 </html>
-
